@@ -4,10 +4,12 @@ Dockerfile for creating a docker image with a Postgres database containing the M
 
 ### Running the container
 
-Visit [docker hub](https://hub.docker.com/u/tkolleh). Pull the latest image and run the below command:
+Visit [docker hub](https://cloud.docker.com/repository/docker/tkolleh/mimic-iii/). Pull the latest image and run the below command:
 
 ```
-docker run -td -p 5432:5432 -e POSTGRES_PASSWORD=password -e MIMIC_PASSWORD=password --name postgres-mimic tkolleh/mimic-iii
+docker run -td -p 5432:5432 -e POSTGRES_PASSWORD=password \
+  -e MIMIC_PASSWORD=password \
+  --name postgres-mimic <image>
 ```
 
 

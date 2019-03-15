@@ -1,4 +1,4 @@
-FROM postgres:10-alpine
+FROM postgres:11.2-alpine
 
 LABEL maintainer="tkolleh@me.com"
 
